@@ -1,0 +1,88 @@
+*:not(input):not(textarea) {
+  -webkit-user-select: none; /* disable selection/Copy of UIWebView */
+  -webkit-touch-callout: none; /* disable the IOS popup when long-press on a link */
+}       
+
+.CodeMirror {
+	font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+	line-height: 1.5;
+	font-size: 14px;
+	width: 100%;
+}
+
+/* hide but don't really */
+
+.cm-s-merged {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+
+
+
+
+.cm-mobius {
+	color: skyblue !important;
+}
+
+.cm-string {
+	font-style: normal !important;
+	color: #96b38a !important;
+}
+
+.marked {
+	background: yellow !important;
+}
+
+module {
+	display: block;
+}
+
+
+draghandle {
+	width: 5vw;
+	max-width: 1.25rem;
+	height: 50%;
+	max-height: 6rem;
+	top: 50%;
+	transform: translateY(-50%);
+	mix-blend-mode: difference;
+
+	opacity: 0.5 !important;
+}
+
+draghandle svg {
+	color: white;
+	/* 	mix-blend-mode:difference; */
+}
+
+.module-toolbar {
+    position: absolute;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+    top: 0.5rem;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background: linear-gradient(0, black, #424242);
+    border: 1px solid rgb(255 255 255 / 15%);
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    max-width: 12.5rem;
+    opacity: .75;
+}
+
+
+output {
+	display: block;
+}
